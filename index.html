@@ -4,350 +4,844 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title></title>
-    <link rel="icon" href="img" />
+    <title>Queen Fun Match</title>
+    <link rel="icon" href="img/500x500.png" />
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <div id="cookie-popup" class="class-cookie-popup">
-      <div class="class-cookie-popup-container">
-        <p class="class-cookie-popup-text-two">
-          We use cookies to improve your experience on our website. By browsing
-          this website, you agree to our use of cookies.
+    <div id="cookie-popup" class="t-b-cookie-popup">
+      <div class="t-b-cookie-popup-container">
+        <p class="t-b-cookie-popup-text-two">
+          Web sitemizi kullanırken deneyiminizi geliştirmek için çerezleri
+          kullanıyoruz. Bu siteyi kullanmaya devam ederek çerez kullanımını
+          kabul etmiş oluyorsunuz.
         </p>
-        <div class="class-cookie-button-container">
-          <button id="accept-cookies" class="class-cookie-button">
-            Accept cookies
+        <div class="t-b-cookie-button-container">
+          <button id="accept-cookies" class="t-b-cookie-button">
+            Kabul Et
           </button>
-          <button id="decline-cookies" class="class-cookie-button">
-            Decline Cookies
+          <button id="decline-cookies" class="t-b-cookie-button">
+            Reddet
           </button>
         </div>
       </div>
     </div>
-    <header class="class-header">
-      <div class="class-header-background"></div>
-      <nav class="class-navigation">
-        <ul class="class-navigation-list">
-          <li class="class-navigation-item">
-            <a href="/" class="class-navigation-link">
+    <header class="t-b-header">
+      <div class="t-b-header-background"></div>
+      <nav class="t-b-navigation">
+        <ul class="t-b-navigation-list">
+          <li class="t-b-navigation-item">
+            <a href="/" class="t-b-navigation-link">
               <img
                 href="/"
-                class="class-title-img class-navigation-img"
+                class="t-b-title-img t-b-navigation-img"
                 alt="logo"
+                src="img/500x500.png"
+                style="width: 40px"
               />
             </a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/" class="class-navigation-link">Home</a>
+          <li class="t-b-navigation-item">
+            <a href="/" class="t-b-navigation-link">Ana Sayfa</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#why" class="class-navigation-link">Why Us?</a>
+          <li class="t-b-navigation-item">
+            <a href="/#about" class="t-b-navigation-link">Konsept</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#uniqueness" class="class-navigation-link"
-              >Our Uniqueness</a
-            >
+          <li class="t-b-navigation-item">
+            <a href="/#uniqueness" class="t-b-navigation-link">İçerikler</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#about" class="class-navigation-link">About the Game</a>
+          <li class="t-b-navigation-item">
+            <a href="/#how" class="t-b-navigation-link">Oyunlaştırma</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#how" class="class-navigation-link">How to Play</a>
+          <li class="t-b-navigation-item">
+            <a href="/#why" class="t-b-navigation-link">Temalar</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#characters" class="class-navigation-link">Characters</a>
+
+          <li class="t-b-navigation-item">
+            <a href="/#characters" class="t-b-navigation-link">Kimler İçin</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#reviews" class="class-navigation-link">User Reviews</a>
+          <li class="t-b-navigation-item">
+            <a href="/#reviews" class="t-b-navigation-link">Yorumlar</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#faq" class="class-navigation-link">FAQ</a>
+          <li class="t-b-navigation-item">
+            <a href="/#faq" class="t-b-navigation-link">SSS</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#gallery" class="class-navigation-link">Gallery</a>
+          <li class="t-b-navigation-item">
+            <a href="/#gallery" class="t-b-navigation-link">Destek</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#features" class="class-navigation-link">Features</a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/policy.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Privacy Policy
-            </a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/terms.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Terms and Conditions
-            </a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/cookies.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Cookies Policy
-            </a>
+          <li class="t-b-navigation-item">
+            <a href="/#features" class="t-b-navigation-link">Abone Ol</a>
           </li>
         </ul>
 
-        <div class="class-header-button-wrapper">
-          <a href="/" class="class-header-icon-title">
-            <img href="/" class="class-title-img" alt="logo" />
+        <div class="t-b-header-button-wrapper">
+          <a href="/" class="t-b-header-icon-title">
+            <img
+              href="/"
+              class="t-b-title-img"
+              alt="logo"
+              src="img/500x500.png"
+              style="width: 40px"
+            />
           </a>
 
           <button
             type="button"
-            class="class-header-icon-button"
+            class="t-b-header-icon-button"
             data-menu-button
           >
             <img
-              class="class-header-icon class-header-icon-menu"
-              src="img/header/menu.png"
+              class="t-b-header-icon t-b-header-icon-menu"
+              src="img/icon_burger.png"
               alt="menu "
+              style="width: 40px"
             />
-            <img
-              class="class-header-icon class-header-icon-close"
-              src="img/header/menu (1).png"
-              alt="close"
-            />
+
+            <svg
+              class="t-b-header-icon t-b-header-icon-close"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.6663 31.6667L8.33301 29.3333L17.6663 20L8.33301 10.6667L10.6663 8.33334L19.9997 17.6667L29.333 8.33334L31.6663 10.6667L22.333 20L31.6663 29.3333L29.333 31.6667L19.9997 22.3333L10.6663 31.6667Z"
+                fill="white"
+              />
+            </svg>
           </button>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="class-home" id="home">
-        <div class="class-home-container">
-          <div class="class-home-container-top">
-            <img class="class-home-title-img" src="/img/home" alt="title" />
-            <p class="class-home-title">Merge Food - Chef Decoration</p>
-            <p class="class-home-text">
-              Cook, Merge, and Create Your Dream Kitchen!
+      <section class="t-b-home" id="home">
+        <div class="t-b-home-container">
+          <div class="t-b-home-container-top">
+            <h1 class="t-b-home-title">
+              Kraliçeler İçin Eğlenceli Kutu Deneyimi
+            </h1>
+            <p class="t-b-home-text">
+              Her Ay Yeni Bir Sürpriz, Her Kutuda Bir Oyun!
             </p>
-            <div class="class-home-div">
-              <a class="class-home-link" href="#"> </a>
+            <p class="t-b-home-text-two">
+              Queen Fun Match ile sıradan abonelik kutularını geride bırakın.
+              Her ay gönderilen temalı kutularla hem kendinize zaman ayırın hem
+              de küçük oyunlarla ödüller kazanın.
+            </p>
+            <div class="t-b-home-div">
+              <a class="t-b-home-link" href="#">Şimdi Abone Ol</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="class-about" id="about">
-        <div class="class-about-container">
-          <h2 class="class-about-title">About the Game</h2>
-          <p class="class-about-text">
-            <span class="class-about-text-bold"
-              >Merge Food - Chef Decoration</span
-            >
-            combines the
+      <section class="t-b-about" id="about">
+        <div class="t-b-about-container">
+          <h2 class="t-b-about-title">Konsept Nedir?</h2>
+          <p class="t-b-about-text">
+            Queen Fun Match, her ay özel olarak tasarlanmış bakım ve eğlence
+            kutularıyla evinize eğlence getirir. Ama sadece ürün göndermiyoruz:
+            <br />Kutularımızın içinde mini oyunlar, eşleştirme görevleri ve
+            sürpriz puan sistemleri var!
+          </p>
+          <p class="t-b-about-text-bold">
+            Puanları topla, özel hediyeleri aç, eğlenerek kendini şımart.
           </p>
         </div>
       </section>
-      <article class="class-why" id="why">
+      <section class="t-b-uniqueness" id="uniqueness">
+        <div class="t-b-uniqueness-container">
+          <h2 class="t-b-about-title">İçeriklerde Neler Var?</h2>
+          <p class="t-b-uniqueness-text-bold">
+            Her ay kutuda bulabileceklerin:
+          </p>
+          <div class="t-b-uniqueness-list">
+            <div class="t-b-uniqueness-item">
+              <figure>
+                <img
+                  class="t-b-uniqueness-img"
+                  src="/img/uniqueness/oil_3188992.png"
+                  alt="oil"
+                />
+              </figure>
+              <p class="t-b-uniqueness-text">
+                Temalı bakım ürünleri (spa, cilt bakımı, esansiyel yağlar)
+              </p>
+            </div>
+            <div class="t-b-uniqueness-item">
+              <figure>
+                <img
+                  class="t-b-uniqueness-img"
+                  src="/img/uniqueness/console_17137514.png"
+                  alt="console"
+                />
+              </figure>
+              <p class="t-b-uniqueness-text">
+                Mini oyunlar (kart eşleştirme, kelime bulmaca, QR görevler)
+              </p>
+            </div>
+            <div class="t-b-uniqueness-item">
+              <figure>
+                <img
+                  class="t-b-uniqueness-img"
+                  src="/img/uniqueness/stones_2883107.png"
+                  alt="stones"
+                />
+              </figure>
+              <p class="t-b-uniqueness-text">
+                Motivasyon kartları ve mindfulness rehberleri
+              </p>
+            </div>
+            <div class="t-b-uniqueness-item">
+              <figure>
+                <img
+                  class="t-b-uniqueness-img"
+                  src="/img/uniqueness/product_12609598.png"
+                  alt="product"
+                />
+              </figure>
+              <p class="t-b-uniqueness-text">
+                Gizli kodlar: eşleştirerek özel sürprizlere ulaş!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="t-b-how" id="how">
+        <div class="t-b-how-container">
+          <h2 class="t-b-about-title">
+            Oyunlaştırma Sistemi Nasıl <br />
+            İşliyor?
+          </h2>
+
+          <ul class="t-b-how-list">
+            <li class="t-b-how-item">
+              Queen Fun Match’in kalbinde oyun ve keşif heyecanı var. Her
+              kutunun içinde 2 ila 5 arası oyunlaştırılmış görev yer alır: gizli
+              QR kodları, fiziksel eşleştirme kartları, şifreli mesajlar ve mini
+              test kartları. Bu görevleri başarıyla tamamladıkça mobil
+              uygulamada Queen Puanları kazanırsınız. Puanlarınızı biriktirdikçe
+              sistem sizi ödüllendirir: bonus ürünler, bir sonraki kutuda
+              sürpriz içerikler, indirim kuponları ve daha fazlası! Bazı
+              görevlerde “Zamanlı Blitz” modu da aktifleşir — belirli sürede
+              tamamlanırsa ekstra puan verir.
+            </li>
+            <li class="t-b-how-item">
+              Kullanıcılar ayrıca kutudaki tematik içeriği dijital olarak da
+              eşleştirebilir. Örneğin “Mystic Moon” kutusunda çıkan kristal kart
+              ile uygulamadaki görev senkronize edilir. Bu sayede fiziksel ve
+              dijital dünya birbirine bağlanır, kullanıcı deneyimi çok daha
+              zenginleşir. Eğlenirken rahatlayacak, rahatlarken yeni seviyelerin
+              kilidini açacaksınız. Oyunla kutu arasında kurulan bu bağ, Queen
+              Fun Match’i eşsiz kılar.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <article class="t-b-why" id="why">
         <span style="display: none"
-          >Generated: 2025-04-12, Hash: class-qk39fd-class-7x</span
+          >Generated: 2025-07-18, Hash: t-b-qk39fd-t-b-7x</span
         >
 
-        <div class="class-why-container">
-          <h2 class="class-about-title">Why Us?</h2>
-          <dl class="class-why-list">
-            <div class="class-why-item">
-              <figure class="class-why-img">
-                <img class="class-why-img" src="img/why" alt="" />
-              </figure>
-              <div>
-                <dt class="class-why-text-bold">Fun and Relaxing:</dt>
-                <dd class="class-why-text">Perfect for unwinding after a</dd>
+        <div class="t-b-why-container">
+          <h2 class="t-b-about-title">Temalar Her Ay Değişiyor</h2>
+          <p class="t-b-why-text-one">
+            Queen Fun Match kutuları her ay farklı bir ruh haline, mevsime veya
+            psikolojik ihtiyaca göre tasarlanır. Temalar yalnızca ürünleri
+            değil, görevleri, renkleri ve içerdiği oyunları da etkiler. İşte
+            bazı örnekler:
+          </p>
+          <dl class="t-b-why-list">
+            <div class="t-b-why-item">
+              <img class="t-b-why-img" src="img/why/Image (1).png" />
+              <div class="t-b-why-item-two">
+                <dt class="t-b-why-text-bold">Zen Garden</dt>
+                <dd class="t-b-why-text">
+                  Lavanta kokulu spa ürünleri, nefes egzersizi kartları ve doğa
+                  sesleriyle eşleşen QR meditasyon görevi. Rahatlama odaklı.
+                </dd>
               </div>
+            </div>
+            <div class="t-b-why-item t-b-why-item-t">
+              <img class="t-b-why-img" src="img/why/Image (2).png" />
+              <div class="t-b-why-item-two">
+                <dt class="t-b-why-text-bold">Mystic Moon</dt>
+                <dd class="t-b-why-text">
+                  Kristaller, ay fazı rehberi, sezgileri geliştirmeye yönelik
+                  oyunlar. Kullanıcıdan rüya günlüğü yazması beklenir.
+                </dd>
+              </div>
+            </div>
+            <div class="t-b-why-item">
+              <img class="t-b-why-img" src="img/why/Image (3).png" />
+              <div class="t-b-why-item-two">
+                <dt class="t-b-why-text-bold">Self-Love Mission</dt>
+                <dd class="t-b-why-text">
+                  Pozitif onay kartları, mini günlük, aynalı kendini tanıma
+                  görevi. QR üzerinden sesli yönlendirmeli egzersizler sunar.
+                </dd>
+              </div>
+            </div>
+            <div class="t-b-why-item t-b-why-item-t">
+              <img class="t-b-why-img" src="img/why/Image (4).png" />
+              <div class="t-b-why-item-two">
+                <dt class="t-b-why-text-bold">Color Match</dt>
+                <dd class="t-b-why-text">
+                  Renkli eşleştirme oyunları, duygu-paleti testi ve kişiye özel
+                  öneriler sunar.
+                </dd>
+              </div>
+            </div>
+            <div class="t-b-why-item">
+              <img class="t-b-why-img" src="img/why/Image (5).png" />
+              <div class="t-b-why-item-two">
+                <dt class="t-b-why-text-bold">Cozy Café</dt>
+                <dd class="t-b-why-text">
+                  Kahve aromalı mumlar, kitap ayracı, QR kodla ulaşılabilen
+                  akşam rutini playlist’i ve mindfulness mini oyunları.
+                </dd>
+              </div>
+            </div>
+            <div class="t-b-why-item-text">
+              Her ayın teması önceden açıklanmaz — bu da sürpriz etkisini
+              artırır. Ama kullanıcılar uygulamadan ipuçları toplayarak bir
+              sonraki temayı tahmin edebilir. Böylece hem beklenti hem etkileşim
+              artar. Temalar ruh halinizi dönüştürürken eğlenceye de ilham olur.
             </div>
           </dl>
         </div>
       </article>
-      <section class="class-uniqueness" id="uniqueness">
-        <div class="class-uniqueness-container">
-          <h2 class="class-about-title">Our Uniqueness</h2>
-          <div class="class-uniqueness-list">
-            <div class="class-uniqueness-item">
-              <img class="class-uniqueness-img" src="" alt="" />
-              <p class="class-uniqueness-text-bold">1. Food Fusion Fun</p>
-              <p class="class-uniqueness-text">
-                Discover unexpected recipes and combinations by merging
-                ingredients.
+      <section class="t-b-characters" id="characters">
+        <div class="t-b-characters-container">
+          <h2 class="t-b-about-title">Kimler İçin Uygun?</h2>
+          <p class="t-b-why-text-one">Queen Fun Match kutuları:</p>
+          <ul class="t-b-characters-list">
+            <li class="t-b-characters-item">
+              <img
+                class="t-b-characters-img"
+                src="/img/characters/mingcute_check-fill.png"
+                alt="check"
+              />
+              <p class="t-b-characters-text">
+                Kendine zaman ayırmak isteyen kadınlar
               </p>
+            </li>
+            <li class="t-b-characters-item">
+              <img
+                class="t-b-characters-img"
+                src="/img/characters/mingcute_check-fill.png"
+                alt="check"
+              />
+              <p class="t-b-characters-text">
+                Sürprizlerle mutlu olmayı seven herkes
+              </p>
+            </li>
+            <li class="t-b-characters-item">
+              <img
+                class="t-b-characters-img"
+                src="/img/characters/mingcute_check-fill.png"
+                alt="check"
+              />
+              <p class="t-b-characters-text">
+                Oyunla rahatlamayı tercih eden genç ruhlar
+              </p>
+            </li>
+            <li class="t-b-characters-item">
+              <img
+                class="t-b-characters-img"
+                src="/img/characters/mingcute_check-fill.png"
+                alt="check"
+              />
+              <p class="t-b-characters-text">
+                Anne-kız bağını güçlendirmek isteyen aileler için birebir!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="t-b-reviews" id="reviews">
+        <div class="t-b-reviews-container">
+          <h2 class="t-b-about-title">Kullanıcı Yorumları</h2>
+          <ul class="t-b-reviews-list">
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “İlk kutumu açtığımda içinden çıkan oyuna şaşırdım. QR kodu
+                okutup başlayan mini test gerçekten çok eğlenceliydi. Ayrıca spa
+                ürünleri de kaliteliydi. Her şey uyumlu ve temalıydı. Artık her
+                ay dört gözle bekliyorum.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (1).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Melis A.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “Kızımla birlikte oynamak için aldım, beklediğimden çok daha
+                etkileşimli çıktı. Beraber kartları eşleştirmek, görev
+                tamamlamak bize çok iyi geldi. Şimdi puanlarımızı birleştirip
+                özel kutuya ulaşmak için yarışıyoruz.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (2).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Serap T.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “Her kutu bir karakter gibi. Mystic Moon favorim oldu. Renkler,
+                kokular ve mini günlük çok anlamlıydı.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (3).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Ece R.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “Kutuların tasarımı çok estetik. İçindeki oyunlar ise basit ama
+                bağlayıcı. Hem rahatladım hem düşündüm.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (4).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Aslı U.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “Queen Fun Match’te en çok sevdiğim şey temaların sürpriz oluşu.
+                Her ay ne geleceğini bilmemek heyecanı artırıyor. Görevleri
+                eşimle bile yaptığımız oldu.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (5).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Banu E.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “Uygulamanın arayüzü çok kolay. Puan biriktirme sistemi harika
+                çalışıyor. Ayrıca geri bildirimlere önem veriyorlar, destek
+                ekibi çok ilgili.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (6).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Derya N.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “İlk başta sadece kutu ürünleri için almıştım ama oyunlar
+                bağımlılık yaptı. Özellikle Blitz görevleri heyecanlı. Gerçekten
+                farklı bir konsept.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (7).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">İlayda S.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “Queen Fun Match bana kendime zaman ayırmanın ne kadar değerli
+                olduğunu hatırlattı. Oyuna dönüştürülmüş mindfulness çok
+                etkileyici.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (8).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Sena K.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “Ofiste stresli bir günün sonunda kutuyu açmak, görevleri yapmak
+                ve QR ile sürpriz kazanmak günümün en keyifli anı oldu.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (9).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Müge D.</p>
+              </div>
+            </li>
+            <li class="t-b-reviews-item">
+              <p class="t-b-reviews-text">
+                “Self-care kavramını oyunla bu kadar iyi anlatan başka bir şey
+                görmedim. Eğlenceli, hafif, rahatlatıcı. Puan kazanmak da ayrıca
+                motive edici.”
+              </p>
+              <div class="t-b-reviews-item-top">
+                <img
+                  class="t-b-reviews-img"
+                  src="/img/reviews/Ellipse 1 (10).png"
+                  alt="avatar"
+                />
+                <p class="t-b-reviews-text-bold">Gülçin Y.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="t-b-faq" id="faq">
+        <div class="t-b-faq-container">
+          <h2 class="t-b-about-title">Sıkça Sorulan Sorular</h2>
+          <ul class="t-b-faq-list">
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Queen Fun Match nasıl çalışır?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Queen Fun Match, her ay adresinize gönderilen bir eğlenceli
+                bakım kutusudur. İçinde tematik ürünler, QR kodlu görevler ve
+                mini oyunlar yer alır. Kutuyu açtıktan sonra, oyunları
+                tamamladıkça mobil uygulamada puan kazanırsınız. Bu puanlar
+                sonraki kutulara özel sürprizlerin kilidini açar. Sistemin amacı
+                sadece ürün sunmak değil; kullanıcıyı aktif bir şekilde sürecin
+                içine çekmektir. Oyunlar fiziksel ve dijital deneyimi
+                birleştirerek etkileşimli bir yapı oluşturur.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Puan sistemi nasıl çalışıyor?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Her görev tamamlandığında belirli miktarda Queen Puanı
+                kazanırsınız. Bazı görevler sabit puan verirken, bazıları
+                zamanlı blitz moduyla daha fazla puan sunar. Puanlarınız
+                uygulamada birikir ve ödüller menüsünde kullanılabilir. Örneğin
+                100 puan, özel mini ürün kazanmanıza olanak sağlar. Sistemde
+                ayrıca "puan çarpanı" görevleri de bulunur. Bu sistem
+                kullanıcıyı oyuna bağlı tutar.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Uygulama zorunlu mu?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Hayır, ama uygulama deneyimi katlar. Görevlerin QR kodları mobil
+                uygulamayla tarandığında puan takibi ve ek içerikler açılır.
+                Ayrıca bazı temalar sadece dijital görevlerle tamamlanabilir.
+                Uygulama olmadan da kutunun fiziksel içeriği kullanılabilir. Ama
+                puan sistemine ve özel ödüllere erişmek için önerilir. Tüm
+                platformlarda çalışır.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Abonelik nasıl çalışır?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Abonelik aylıktır ve istediğiniz zaman iptal edebilirsiniz. İlk
+                ayda özel karşılama kutusu gönderilir. Her ayın 1-7’si arasında
+                kargoya verilir. İptal için kullanıcı panelinden çıkış yapılması
+                yeterlidir. Herhangi bir taahhüt yoktur. Tek seferlik sipariş de
+                mümkündür.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Kutuların içeriği nasıl belirleniyor?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Her ay uzman ekipler tarafından o aya özel tema oluşturulur.
+                Seçilen temaya uygun bakım ürünleri, oyunlar ve görsel dil
+                belirlenir. Ürünler dermatolojik olarak testlidir. Oyunlar ise
+                hem eğlendirici hem de psikolojik rahatlama amaçlı tasarlanır.
+                İçerik oluştururken kullanıcı geri bildirimleri dikkate alınır.
+                Her kutu benzersizdir.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Kaç puanla ne kazanabilirim?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                100 puan – mini sürpriz ürün <br />
+                200 puan – bir sonraki kutuda ekstra oyun kartı <br />
+                500 puan – geçmiş temalı özel kutu seçme hakkı <br />
+                Puanlar 12 ay boyunca geçerlidir. Kullanıcı panelinden ödüller
+                bölümünden harcama yapılabilir. Ayrıca özel günlerde puanla
+                hediye gönderme seçeneği de bulunur.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Kutu içeriği vegan mı?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Çoğu ürün vegandır. Her kutuda içerikler açıkça listelenir.
+                Hayvansal içerik barındıran ürün varsa alternatif opsiyon
+                sunulur. Abonelik sırasında “vegan kutu tercih ediyorum”
+                seçeneğini işaretleyebilirsiniz. Queen Fun Match etik değerlere
+                duyarlıdır. Doğa dostu ambalajlar kullanılır.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Ailece oynanabilir mi?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Evet! Görevler yaşa uygun olduğu sürece aile bireyleriyle
+                birlikte yapılabilir. Özellikle anne-kız kutuları için özel
+                görev kartları bulunur. Çoklu kullanıcı desteği ile puanlar ayrı
+                ayrı toplanabilir. Ortak oyunlar bağ kurmayı artırır. Evde
+                birlikte kaliteli zaman geçirmek isteyen aileler için idealdir.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Puanlar başka birine devredilebilir mi?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Şimdilik hayır, ama "hediye puan" sistemi yolda. Kendi
+                hesabınızla biriktirdiğiniz puanlar sadece sizin kullanımız
+                içindir. Ancak özel günlerde sevdiklerinize puan göndermek için
+                kampanyalar yapılır. Yakında uygulamaya “arkadaşına gönder”
+                özelliği eklenecek. Bu sayede topluluk daha da büyüyecek.
+              </div>
+            </li>
+            <li class="t-b-faq-item">
+              <div class="t-b-faq-question" onclick="toggleAnswer(this)">
+                <span>Hediye olarak gönderilebilir mi?</span>
+                <button class="t-b-toggle-button">
+                  <img src="/img/faq/Icon Container.png" alt="Toggle" />
+                </button>
+              </div>
+              <div class="t-b-faq-answer">
+                Evet. Sipariş sırasında hediye kutusu seçeneği aktif hale
+                getirilebilir. İsterseniz özel not da ekleyebilirsiniz. Paket
+                dış görünümünde sürprizi bozmayan sade tasarım kullanılır.
+                Abonelik olarak ya da tek seferlik hediye olarak gönderilebilir.
+                Doğum günü, yılbaşı ve anneler günü için popüler bir tercih.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="t-b-gallery" id="gallery">
+        <div class="t-b-gallery-container">
+          <h2 class="t-b-about-title">Platform & Destek</h2>
+
+          <ul class="t-b-gallery-list">
+            <li class="t-b-gallery-item">
+              <img
+                class="t-b-gallery-image"
+                src="./img/gallery/ab-testing_7729594.png"
+                alt="ab-testing"
+              />iOS & Android uygulamalarıyla entegre
+            </li>
+            <li class="t-b-gallery-item">
+              <img
+                class="t-b-gallery-image"
+                src="./img/gallery/analytic_12632301.png"
+                alt="analytic"
+              />Web panel üzerinden puan ve görev takibi
+            </li>
+            <li class="t-b-gallery-item">
+              <img
+                class="t-b-gallery-image"
+                src="./img/gallery/help_1660165.png"
+                alt="help"
+              />
+              <a
+                class="t-b-gallery-item-text"
+                href="mailto:info@queenfunmatch.com"
+                >Destek: info@queenfunmatch.com</a
+              >
+            </li>
+            <li class="t-b-gallery-item">
+              <img
+                class="t-b-gallery-image"
+                src="./img/gallery/working-hours_16956945.png"
+                alt="working-hours"
+              />Müşteri hizmetleri: Hafta içi 09:00–18:00 (GMT+3)
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="t-b-features" id="features">
+        <div class="t-b-features-container">
+          <h2 class="t-b-about-title">Neden Queen Fun Match?</h2>
+          <div class="t-b-features-list">
+            <div class="t-b-features-item">
+              <img
+                class="t-b-features-img"
+                src="/img/features/ci_check-all.png"
+                alt=""
+              />Eğlence ve bakım tek kutuda
+            </div>
+            <div class="t-b-features-item">
+              <img
+                class="t-b-features-img"
+                src="/img/features/ci_check-all.png"
+                alt="check"
+              />Her ay farklı tema ve oyun
+            </div>
+            <div class="t-b-features-item">
+              <img
+                class="t-b-features-img"
+                src="/img/features/ci_check-all.png"
+                alt="check"
+              />Kadınlar için pozitif içerik
+            </div>
+            <div class="t-b-features-item">
+              <img
+                class="t-b-features-img"
+                src="/img/features/ci_check-all.png"
+                alt="check"
+              />Ailece oynanabilir format
+            </div>
+            <div class="t-b-features-item">
+              <img
+                class="t-b-features-img"
+                src="/img/features/ci_check-all.png"
+                alt="check"
+              />Sürprizler, hediyeler, kahkaha!
             </div>
           </div>
         </div>
       </section>
-      <section class="class-reviews" id="reviews">
-        <div class="class-reviews-container">
-          <h2 class="class-about-title">Reviews</h2>
-          <ul class="class-reviews-list">
-            <li class="class-reviews-item">
-              <div class="class-reviews-item-top">
-                <img
-                  class="class-reviews-img"
-                  src="/img/reviews/image 12.png"
-                  alt="image"
-                />
-                <p class="class-reviews-text-bold">GourmetGamer:</p>
-              </div>
-              <p class="class-reviews-text">
-                "This game is so addictive! I love discovering new recipes and
-                decorating my kitchen."
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="class-how" id="how">
-        <div class="class-how-container">
-          <h2 class="class-about-title">How to Play</h2>
-
-          <ul class="class-how-list">
-            <li class="class-how-item">
-              <img
-                class="class-how-img"
-                src="/img/how/image (1).png"
-                alt="image"
-              />
-              <p class="class-how-text-bold">Merge Ingredients:</p>
-              <p class="class-how-text">
-                Drag and merge identical food items to discover new recipes.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="class-characters" id="characters">
-        <div class="class-characters-container">
-          <h2 class="class-about-title">Characters</h2>
-          <ul class="class-characters-list">
-            <li class="class-characters-item">
-              <img class="class-characters-img" src="" alt="" />
-              <p class="class-characters-text-bold">Chef Bella:</p>
-              <p class="class-characters-text">
-                A cheerful pastry chef who inspires creativity in the kitchen
-                with her love for desserts.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="class-faq" id="faq">
-        <div class="class-faq-container">
-          <h2 class="class-about-title">FAQ</h2>
-          <ul class="class-faq-list">
-            <li class="class-faq-item">
-              <div class="class-faq-question" onclick="toggleAnswer(this)">
-                <span>Is "Merge Food - Chef Decoration" free to play?</span>
-                <button class="class-toggle-button">
-                  <img src="/img/faq/icon.png" alt="Toggle" />
-                </button>
-              </div>
-              <div class="class-faq-answer">
-                Yes, the game is free to play with optional in-app purchases for
-                special items.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="class-gallery" id="gallery">
-        <div class="class-gallery-container">
-          <h2 class="class-about-title">Gallery</h2>
-
-          <ul class="class-gallery-list">
-            <li class="class-gallery-item">
-              <img
-                class="class-gallery-image"
-                src="./img/gallery/3.png"
-                alt="gallery image"
-              />
-            </li>
-          </ul>
-          <div class="class-gallery-button-container">
-            <button class="class-gallery-button class-gallery-list-left">
-              <img
-                class="class-gallery-button-icon"
-                src="img"
-                alt="left button"
-              />
-            </button>
-            <button class="class-gallery-button class-gallery-list-right">
-              <img
-                class="class-gallery-button-icon"
-                src="img"
-                alt="right button"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="class-features" id="features">
-        <div class="class-features-container">
-          <h2 class="class-about-title">Kontakt</h2>
-          <p class="class-features-text-bold">
-            Email:
-            <a class="class-features-text-bold" href="mailto:info@fbrelucye.xyz"
-              >info@fbrelucye.xyz</a
+      <section class="t-b-new" id="new">
+        <div class="t-b-new-container">
+          <div class="t-b-new-list">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
+              <img
+                class="t-b-footer-img"
+                src="/img/footer/ri_instagram-fill.png"
+                alt="instagram"
+              />
+            </a>
+            <a
+              href="https://www.pinterest.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="t-b-footer-img"
+                src="/img/footer/akar-icons_pinterest-fill.png"
+                alt="pinterest"
+              />
+            </a>
+
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="t-b-footer-img"
+                src="/img/footer/streamline-flex_tiktok-solid.png"
+                alt="tiktok"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="t-b-footer-img"
+                src="/img/footer/uil_youtube.png"
+                alt="youtube"
+              />
+            </a>
+          </div>
+          <p class="t-b-new-text">
+            Paylaş, eşleştir, etiketle → #QueenFunChallenge
           </p>
-          <div class="class-features-div">
-            <form
-              class="class-features-form"
-              action="info@domain.com"
-              method="POST"
-              enctype="text/plain"
-            >
-              <input
-                class="class-features-input"
-                type="text"
-                name="name"
-                placeholder="Imię i Nazwisko"
-                required
-              /><input
-                class="class-features-input"
-                type="tel"
-                name="phone"
-                placeholder="Telefon"
-                required
-              />
-              <input
-                class="class-features-input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required
-              />
-              <textarea
-                class="class-features-input class-features-textarea"
-                name="message"
-                placeholder="Mesaj"
-                required
-              ></textarea>
-              <button class="class-features-button" type="submit">
-                Zamów narzędzie czasu
-              </button>
-            </form>
-
-            <img class="class-features-img" src="/img" alt="" />
-          </div>
         </div>
       </section>
     </main>
-
+    <footer class="t-b-footer" style="margin: auto; background: #123524">
+      <div class="t-b-footer-container">
+        <div class="t-b-footer-wrapper">
+          <a class="t-b-footer-text" href="/policy.html"
+            >Gizlilik Politikası</a
+          >
+          <a class="t-b-footer-text" href="/terms.html">Kullanım Şartları </a>
+          <a class="t-b-footer-text" href="/cookies.html">Çerez Politikası</a>
+        </div>
+        <p class="t-b-footer-copyright">
+          © 2025 queenfunmatch.com <br />
+          Tüm hakları saklıdır.
+        </p>
+      </div>
+    </footer>
     <script src="js/mobile-menu.js"></script>
-    <script src="js/jquery-loc-class-0.js"></script>
+    <script src="js/jquery-loc-t-b-0.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
   </body>
